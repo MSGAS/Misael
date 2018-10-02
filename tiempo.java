@@ -1,11 +1,11 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-public class tiempo extends Actor
+public class Tiempo extends Actor
 {
     private SimpleTimer timer;
     private Counter contador;
     
-    public tiempo(){
+    public Tiempo(){
         timer = new SimpleTimer();
         contador = new Counter("Tiempo: ");
         contador.setValue(60);
@@ -14,7 +14,6 @@ public class tiempo extends Actor
     protected void addedToWorld(World world){
         world.addObject(contador,60,20);
     }
-    
     
     public void act() 
     {
